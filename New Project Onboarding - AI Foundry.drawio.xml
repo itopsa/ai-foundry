@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1" pages="6">
+  <diagram name="Page-1" id="XXlajvHtd-h3HJ_AYu23">
+    <mxGraphModel dx="1187" dy="716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" value="New Project Onboarding – AI Foundry" vertex="1">
+          <mxGeometry height="50" width="600" x="300" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;" value="1. Project Request" vertex="1">
+          <mxGeometry height="60" width="240" x="480" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="s1" style="edgeStyle=orthogonalEdgeStyle;" target="s2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="2. Intake &amp; Requirements Gathering&#xa;(Team name, resources needed, subnet requirements)" vertex="1">
+          <mxGeometry height="70" width="340" x="430" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="s2" style="edgeStyle=orthogonalEdgeStyle;" target="s3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;" value="3. Determine Use Case" vertex="1">
+          <mxGeometry height="80" width="260" x="470" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="s3" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="uc1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="455" />
+              <mxPoint x="160" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="s3" style="edgeStyle=orthogonalEdgeStyle;" target="uc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="s3" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="uc3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="455" />
+              <mxPoint x="1030" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;" value="Use Case 1&#xa;Private Agent Capability&#xa;(e.g. LIRR, OMB)" vertex="1">
+          <mxGeometry height="80" width="240" x="40" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1r" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;align=left;" value="Resources:&#xa;• Separate Subnet&#xa;• Private Endpoints (pe-llm, pe-data, pe-srch)&#xa;• LLM (OpenAI API)&#xa;• AI Search&#xa;• Cosmos DB&#xa;• Storage&#xa;• Key Vault" vertex="1">
+          <mxGeometry height="160" width="300" x="10" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" value="Use Case 2&#xa;LLM + AI Search Access Only" vertex="1">
+          <mxGeometry height="80" width="240" x="480" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2r" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;" value="Resources:&#xa;• LLM (OpenAI API)&#xa;• AI Search&#xa;• Cosmos DB&#xa;• Storage&#xa;• Key Vault&#xa;(No private endpoints needed)" vertex="1">
+          <mxGeometry height="160" width="280" x="460" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;" value="Use Case 3&#xa;Shared Agent Resources" vertex="1">
+          <mxGeometry height="80" width="240" x="910" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3r" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;align=left;" value="Resources:&#xa;• AI Search (shared)&#xa;• Cosmos DB (shared)&#xa;• Storage (shared)&#xa;• Key Vault (shared)&#xa;(External to AI Foundry)" vertex="1">
+          <mxGeometry height="160" width="280" x="890" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="uc1" style="edgeStyle=orthogonalEdgeStyle;" target="uc1r">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="uc2" style="edgeStyle=orthogonalEdgeStyle;" target="uc2r">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="uc3" style="edgeStyle=orthogonalEdgeStyle;" target="uc3r">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="uc1r" style="edgeStyle=orthogonalEdgeStyle;" target="s4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="810" />
+              <mxPoint x="600" y="810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="uc2r" style="edgeStyle=orthogonalEdgeStyle;" target="s4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="uc3r" style="edgeStyle=orthogonalEdgeStyle;" target="s4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="810" />
+              <mxPoint x="600" y="810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="4. Create AI Foundry Project&#xa;(within existing AI Hub Foundry)" vertex="1">
+          <mxGeometry height="70" width="320" x="440" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="s4" style="edgeStyle=orthogonalEdgeStyle;" target="s5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="5. Configure RBAC&#xa;(Assign Team access to their Project only)" vertex="1">
+          <mxGeometry height="70" width="320" x="440" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="s5" style="edgeStyle=orthogonalEdgeStyle;" target="s6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="6. Connect &amp; Register Resources&#xa;(Link LLM, Storage, AI Search, Cosmos DB, Key Vault)" vertex="1">
+          <mxGeometry height="70" width="360" x="420" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="s6" style="edgeStyle=orthogonalEdgeStyle;" target="s7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s7" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;" value="Private Endpoint Required?" vertex="1">
+          <mxGeometry height="80" width="280" x="460" y="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="s7" style="edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" target="s7a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_yes" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontStyle=1;" value="Yes" vertex="1">
+          <mxGeometry height="20" width="40" x="355" y="1195" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="s7" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" target="s8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="1210" />
+              <mxPoint x="810" y="1320" />
+              <mxPoint x="600" y="1320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_no" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontStyle=1;" value="No" vertex="1">
+          <mxGeometry height="20" width="40" x="755" y="1195" as="geometry" />
+        </mxCell>
+        <mxCell id="s7a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="7a. Setup Private Endpoints&#xa;(pe-llm, pe-data, pe-srch on Subnet2)&#xa;+ Configure Separate Subnet" vertex="1">
+          <mxGeometry height="80" width="300" x="160" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="s7a" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" target="s8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="1400" />
+              <mxPoint x="430" y="1400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="8. Validation &amp; Testing&#xa;(Verify access, resource connectivity, RBAC)" vertex="1">
+          <mxGeometry height="70" width="340" x="430" y="1380" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="s8" style="edgeStyle=orthogonalEdgeStyle;" target="s9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" value="9. Handoff &amp; Go Live&#xa;(Team notified, documentation shared,&#xa;project is live in AI Foundry)" vertex="1">
+          <mxGeometry height="80" width="340" x="430" y="1490" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="9xTzsghmsKAq1L3k9RvM" name="Azure Landing Zone">
+    <mxGraphModel dx="1273" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=18;fontStyle=1;" value="Azure Landing Zone – AI Foundry Best Practices (3 Use Cases)" vertex="1">
+          <mxGeometry height="50" width="1400" x="200" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="mg" parent="1" style="swimlane;startSize=35;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=13;fontStyle=1;horizontal=1;" value="Azure Management Group (AI Foundry Organization)" vertex="1">
+          <mxGeometry height="80" width="1400" x="200" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="mg_pol" parent="mg" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" value="Azure Policy&#xa;(Enforce Private Endpoints,&#xa;No Public Access, TLS 1.2+)" vertex="1">
+          <mxGeometry height="35" width="200" x="30" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="mg_rbac" parent="mg" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" value="Azure RBAC&#xa;(Reader/Contributor scoped&#xa;per project subscription)" vertex="1">
+          <mxGeometry height="35" width="200" x="260" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="mg_mon" parent="mg" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" value="Azure Monitor + Defender for Cloud&#xa;(Security posture, alerts, logs)" vertex="1">
+          <mxGeometry height="35" width="230" x="490" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="mg_kv" parent="mg" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" value="Azure Key Vault&#xa;(Centralised secrets,&#xa;CMK encryption)" vertex="1">
+          <mxGeometry height="35" width="180" x="750" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="mg_log" parent="mg" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" value="Log Analytics Workspace&#xa;(Centralised diagnostics,&#xa;audit logs)" vertex="1">
+          <mxGeometry height="35" width="200" x="960" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="hub_sub" parent="1" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="Hub Subscription (Platform Landing Zone)" vertex="1">
+          <mxGeometry height="170" width="1400" x="200" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="hub_vnet" parent="hub_sub" style="swimlane;startSize=25;fillColor=#cce5ff;strokeColor=#4a90d9;fontSize=11;fontStyle=1;" value="Hub VNet (10.0.0.0/16)" vertex="1">
+          <mxGeometry height="120" width="1360" x="20" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="fw" parent="hub_vnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001dbc;fontSize=10;" value="Azure Firewall&#xa;(Premium)&#xa;Subnet: 10.0.1.0/26" vertex="1">
+          <mxGeometry height="65" width="160" x="20" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="vpn" parent="hub_vnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001dbc;fontSize=10;" value="VPN / ExpressRoute&#xa;Gateway&#xa;Subnet: 10.0.0.0/27" vertex="1">
+          <mxGeometry height="65" width="160" x="200" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="bastion" parent="hub_vnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001dbc;fontSize=10;" value="Azure Bastion&#xa;(Secure admin access)&#xa;Subnet: 10.0.2.0/27" vertex="1">
+          <mxGeometry height="65" width="160" x="380" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="dns" parent="hub_vnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001dbc;fontSize=10;align=left;" value="Azure Private DNS Zones&#xa;(privatelink.openai.azure.com&#xa;privatelink.search.windows.net&#xa;privatelink.documents.azure.com)" vertex="1">
+          <mxGeometry height="85" width="280" x="560" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="udr" parent="hub_vnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001dbc;fontSize=10;" value="UDR / Route Table&#xa;(Force tunnel to Firewall)" vertex="1">
+          <mxGeometry height="65" width="160" x="860" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="nsg_hub" parent="hub_vnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001dbc;fontSize=10;" value="NSG&#xa;(Hub default deny)" vertex="1">
+          <mxGeometry height="65" width="140" x="1040" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ddos" parent="hub_vnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001dbc;fontSize=10;" value="DDoS Protection&#xa;Standard" vertex="1">
+          <mxGeometry height="65" width="140" x="1200" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="aif_sub" parent="1" style="swimlane;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" value="AI Foundry Subscription (Application Landing Zone)" vertex="1">
+          <mxGeometry height="480" width="1400" x="200" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="aif_hub" parent="aif_sub" style="swimlane;startSize=28;fillColor=#82b366;fontColor=#ffffff;strokeColor=#6a9153;fontSize=11;fontStyle=1;" value="AI Foundry Hub Resource&#xa;(Single Hub hosting all Projects)" vertex="1">
+          <mxGeometry height="430" width="1360" x="20" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_spoke" parent="aif_hub" style="swimlane;startSize=24;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;" value="Spoke VNet UC1 (10.1.0.0/16) – VNet Peering to Hub" vertex="1">
+          <mxGeometry height="380" width="390" x="20" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_title" parent="uc1_spoke" style="text;html=1;strokeColor=none;fillColor=#9673a6;fontColor=#ffffff;align=center;fontSize=10;fontStyle=1;rounded=1;" value="Use Case 1: Private Agent Capability&#xa;(LIRR, OMB – highest security)" vertex="1">
+          <mxGeometry height="35" width="370" x="10" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_proj" parent="uc1_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;" value="Project 1 (Team 1)&#xa;RBAC: Team1 Contributor" vertex="1">
+          <mxGeometry height="35" width="370" x="10" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_subnet_agent" parent="uc1_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;" value="Agent Subnet (10.1.1.0/24)&#xa;Private Agent Capability&#xa;NSG: deny all inbound, allow HTTPS outbound" vertex="1">
+          <mxGeometry height="50" width="370" x="10" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_subnet_pe" parent="uc1_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;fontStyle=1;" value="Private Endpoint Subnet – Subnet1 (10.1.2.0/24)" vertex="1">
+          <mxGeometry height="20" width="370" x="10" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_pe_llm" parent="uc1_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;" value="pe-llm&#xa;(OpenAI)" vertex="1">
+          <mxGeometry height="45" width="100" x="10" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_pe_data" parent="uc1_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;" value="pe-data&#xa;(Storage/Cosmos)" vertex="1">
+          <mxGeometry height="45" width="120" x="120" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_pe_srch" parent="uc1_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;" value="pe-srch&#xa;(AI Search)" vertex="1">
+          <mxGeometry height="45" width="120" x="250" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_resources" parent="uc1_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;align=left;" value="Connected Resources:&#xa;• Azure OpenAI (private endpoint)&#xa;• AI Search (private endpoint)&#xa;• Cosmos DB (private endpoint)&#xa;• Azure Storage (private endpoint)&#xa;• Key Vault (private endpoint)" vertex="1">
+          <mxGeometry height="100" width="370" x="10" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_spoke" parent="aif_hub" style="swimlane;startSize=24;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" value="Spoke VNet UC2 (10.2.0.0/16) – VNet Peering to Hub" vertex="1">
+          <mxGeometry height="380" width="390" x="430" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_title" parent="uc2_spoke" style="text;html=1;strokeColor=none;fillColor=#82b366;fontColor=#ffffff;align=center;fontSize=10;fontStyle=1;rounded=1;" value="Use Case 2: LLM + AI Search Access Only&#xa;(Standard, no private endpoints)" vertex="1">
+          <mxGeometry height="35" width="370" x="10" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_proj" parent="uc2_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" value="Project 2 (Team 2)&#xa;RBAC: Team2 Contributor" vertex="1">
+          <mxGeometry height="35" width="370" x="10" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_subnet" parent="uc2_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;" value="App Subnet (10.2.1.0/24)&#xa;NSG: allow HTTPS outbound to service endpoints&#xa;Service Endpoints: OpenAI, Storage, KeyVault" vertex="1">
+          <mxGeometry height="50" width="370" x="10" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_conn" parent="uc2_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;align=left;" value="Connected via Service Endpoints (no PE):&#xa;• Azure OpenAI (public w/ VNET SR)&#xa;• AI Search (public w/ IP restrict)&#xa;• Azure Storage (service endpoint)&#xa;• Cosmos DB (service endpoint)&#xa;• Key Vault (service endpoint)" vertex="1">
+          <mxGeometry height="105" width="370" x="10" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_nsg" parent="uc2_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;align=left;" value="NSG Best Practices:&#xa;• Deny all public inbound&#xa;• Allow HTTPS to Azure PaaS tags&#xa;• Log all denied traffic to Log Analytics" vertex="1">
+          <mxGeometry height="70" width="370" x="10" y="293" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_spoke" parent="aif_hub" style="swimlane;startSize=24;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=1;" value="Spoke VNet UC3 (10.3.0.0/16) – VNet Peering to Hub" vertex="1">
+          <mxGeometry height="380" width="490" x="840" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_title" parent="uc3_spoke" style="text;html=1;strokeColor=none;fillColor=#d79b00;fontColor=#ffffff;align=center;fontSize=10;fontStyle=1;rounded=1;" value="Use Case 3: Shared Agent Resources&#xa;(External resources, shared across projects)" vertex="1">
+          <mxGeometry height="35" width="470" x="10" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_proj" parent="uc3_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=1;" value="Project 3 (Team 3)&#xa;RBAC: Team3 Contributor" vertex="1">
+          <mxGeometry height="35" width="470" x="10" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_subnet" parent="uc3_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;" value="Shared Services Subnet (10.3.1.0/24)&#xa;NSG: restricted to AI Foundry projects only" vertex="1">
+          <mxGeometry height="40" width="470" x="10" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_cosmos" parent="uc3_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;" value="Cosmos DB&#xa;(Shared, private endpoint)" vertex="1">
+          <mxGeometry height="55" width="140" x="10" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_lake" parent="uc3_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;" value="Data Lake&#xa;Storage Container&#xa;(Shared, private endpoint)" vertex="1">
+          <mxGeometry height="55" width="140" x="165" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_srch" parent="uc3_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;" value="AI Search&#xa;(Shared index)" vertex="1">
+          <mxGeometry height="55" width="140" x="320" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_rbac" parent="uc3_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;align=left;" value="Shared Resource Access:&#xa;• RBAC: Reader role on shared resources&#xa;• Managed Identity per project&#xa;• Private endpoints from each spoke&#xa;• Key Vault for shared secrets" vertex="1">
+          <mxGeometry height="80" width="470" x="10" y="233" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_ext" parent="uc3_spoke" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#ffffff;strokeColor=#BD7000;fontSize=9;align=left;" value="NOTE: Cosmos DB + Data Lake are EXTERNAL&#xa;to AI Foundry (in shared services subscription)&#xa;Connected via Private Endpoint from each Spoke" vertex="1">
+          <mxGeometry height="45" width="470" x="10" y="323" as="geometry" />
+        </mxCell>
+        <mxCell id="shared_sub" parent="1" style="swimlane;startSize=30;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;" value="Shared Services Subscription" vertex="1">
+          <mxGeometry height="150" width="1400" x="200" y="865" as="geometry" />
+        </mxCell>
+        <mxCell id="sh_cosmos" parent="shared_sub" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Cosmos DB&#xa;(Private Endpoint)" vertex="1">
+          <mxGeometry height="70" width="180" x="30" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="sh_lake" parent="shared_sub" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Data Lake&#xa;Storage Container&#xa;(Private Endpoint)" vertex="1">
+          <mxGeometry height="70" width="180" x="240" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="sh_kv" parent="shared_sub" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Key Vault&#xa;(CMK + Secrets)&#xa;(Private Endpoint)" vertex="1">
+          <mxGeometry height="70" width="180" x="450" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="sh_acr" parent="shared_sub" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Container Registry&#xa;(AI Model images)&#xa;(Private Endpoint)" vertex="1">
+          <mxGeometry height="70" width="180" x="660" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="sh_openai" parent="shared_sub" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Azure OpenAI Service&#xa;(Private Endpoint)&#xa;Shared across projects" vertex="1">
+          <mxGeometry height="70" width="200" x="870" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="sh_search" parent="shared_sub" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Azure AI Search&#xa;(Private Endpoint)&#xa;Shared index" vertex="1">
+          <mxGeometry height="70" width="200" x="1100" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="swimlane;startSize=25;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;fontStyle=1;" value="Legend" vertex="1">
+          <mxGeometry height="70" width="1400" x="200" y="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1" parent="legend" style="rounded=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001dbc;fontSize=10;" value="Hub Networking" vertex="1">
+          <mxGeometry height="30" width="150" x="20" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2" parent="legend" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" value="UC1: Private Agent (highest security)" vertex="1">
+          <mxGeometry height="30" width="220" x="190" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3" parent="legend" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" value="UC2: LLM + AI Search (service endpoints)" vertex="1">
+          <mxGeometry height="30" width="240" x="430" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4" parent="legend" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" value="UC3: Shared Agent Resources" vertex="1">
+          <mxGeometry height="30" width="210" x="690" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="leg5" parent="legend" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" value="Governance / Policy" vertex="1">
+          <mxGeometry height="30" width="160" x="920" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="leg6" parent="legend" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" value="Shared Services" vertex="1">
+          <mxGeometry height="30" width="150" x="1100" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="peer1" edge="1" parent="1" source="hub_vnet" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#9673a6;" target="uc1_spoke" value="VNet Peering">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="peer2" edge="1" parent="1" source="hub_vnet" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#82b366;" target="uc2_spoke" value="VNet Peering">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="peer3" edge="1" parent="1" source="hub_vnet" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#d79b00;" target="uc3_spoke" value="VNet Peering">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pe_arrow1" edge="1" parent="1" source="uc3_spoke" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#d79b00;" target="shared_sub" value="Private Endpoint">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Bcb4Jjq7owuua3Ab7XSD" name="PRD - Page 1">
+    <mxGraphModel dx="2612" dy="1576" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hdr_bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1e3a5f;strokeColor=#1e3a5f;" value="" vertex="1">
+          <mxGeometry height="90" width="1100" x="50" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size:22px;font-weight:bold;&quot;&gt;AI Foundry Platform – PRD &amp; Technical Design Document&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="800" x="70" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr_meta" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" value="&lt;font color=&quot;#add8e6&quot;&gt;Version: 1.0 &amp;nbsp;|&amp;nbsp; Status: DRAFT &amp;nbsp;|&amp;nbsp; Date: March 2026 &amp;nbsp;|&amp;nbsp; Owner: AI Platform Team&lt;/font&gt;" vertex="1">
+          <mxGeometry height="25" width="700" x="70" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#1e3a5f;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;rounded=1;" value="1. Executive Summary" vertex="1">
+          <mxGeometry height="30" width="1100" x="50" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_body" parent="1" style="text;html=1;strokeColor=#cccccc;fillColor=#f9f9f9;align=left;verticalAlign=top;fontSize=11;spacingLeft=8;spacingRight=8;spacingTop=6;" value="&lt;p&gt;This document defines the product requirements and technical design for the &lt;b&gt;AI Foundry Platform&lt;/b&gt; — a centralised Azure AI Hub that enables multiple agency teams to onboard AI projects securely and efficiently within a shared infrastructure.&lt;/p&gt;&lt;p&gt;The platform supports three onboarding patterns (Use Cases) based on security, connectivity, and resource-sharing needs. All projects are hosted within a single AI Foundry Hub, isolated by Azure RBAC and network controls, avoiding the overhead of separate subscriptions per team.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Key objectives:&lt;/b&gt; Reduce time-to-onboard for new AI projects &amp;#x2022; Enforce security and compliance by default &amp;#x2022; Enable resource sharing without cross-team data leakage &amp;#x2022; Support private, semi-private, and shared resource patterns.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="115" width="1100" x="50" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#1e3a5f;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;rounded=1;" value="2. Problem Statement" vertex="1">
+          <mxGeometry height="30" width="1100" x="50" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_body" parent="1" style="text;html=1;strokeColor=#cccccc;fillColor=#f9f9f9;align=left;verticalAlign=top;fontSize=11;spacingLeft=8;spacingTop=6;" value="&lt;p&gt;Agency teams require access to large language models, AI search, and data services to build intelligent applications. Without a shared platform:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Each team independently provisions Azure AI resources, leading to cost duplication and configuration drift.&lt;/li&gt;&lt;li&gt;There is no consistent security baseline — some teams expose resources publicly, others lack private endpoint configurations.&lt;/li&gt;&lt;li&gt;Teams with strict compliance needs (e.g. LIRR, OMB requiring private agent capability) have no templated pattern to follow.&lt;/li&gt;&lt;li&gt;Onboarding takes weeks due to ad-hoc infrastructure requests with no standard process.&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="110" width="1100" x="50" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#1e3a5f;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;rounded=1;" value="3. Goals &amp; Success Metrics" vertex="1">
+          <mxGeometry height="30" width="1100" x="50" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_th1" parent="1" style="text;html=1;strokeColor=#999;fillColor=#dae8fc;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Goal" vertex="1">
+          <mxGeometry height="28" width="320" x="50" y="487" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_th2" parent="1" style="text;html=1;strokeColor=#999;fillColor=#dae8fc;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Success Metric" vertex="1">
+          <mxGeometry height="28" width="380" x="370" y="487" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_th3" parent="1" style="text;html=1;strokeColor=#999;fillColor=#dae8fc;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Target" vertex="1">
+          <mxGeometry height="28" width="400" x="750" y="487" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_r1a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Fast project onboarding" vertex="1">
+          <mxGeometry height="26" width="320" x="50" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_r1b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Time from request to live project" vertex="1">
+          <mxGeometry height="26" width="380" x="370" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_r1c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="&lt; 5 business days" vertex="1">
+          <mxGeometry height="26" width="400" x="750" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_r2a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Security compliance" vertex="1">
+          <mxGeometry height="26" width="320" x="50" y="541" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_r2b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="% projects with no public endpoint exposure" vertex="1">
+          <mxGeometry height="26" width="380" x="370" y="541" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_r2c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="100% for UC1; 0 critical findings in Defender" vertex="1">
+          <mxGeometry height="26" width="400" x="750" y="541" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_r3a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="RBAC isolation" vertex="1">
+          <mxGeometry height="26" width="320" x="50" y="567" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_r3b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Zero cross-team data access incidents" vertex="1">
+          <mxGeometry height="26" width="380" x="370" y="567" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_r3c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="0 incidents per quarter" vertex="1">
+          <mxGeometry height="26" width="400" x="750" y="567" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_r4a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Cost efficiency" vertex="1">
+          <mxGeometry height="26" width="320" x="50" y="593" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_r4b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Shared resource utilisation vs per-team provisioning" vertex="1">
+          <mxGeometry height="26" width="380" x="370" y="593" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_r4c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="30%+ cost reduction vs isolated deployments" vertex="1">
+          <mxGeometry height="26" width="400" x="750" y="593" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#1e3a5f;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;rounded=1;" value="4. Use Cases &amp; Requirements" vertex="1">
+          <mxGeometry height="30" width="1100" x="50" y="635" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_hdr" parent="1" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;rounded=1;spacingLeft=8;" value="Use Case 1 – Private Agent Capability (e.g. LIRR, OMB)" vertex="1">
+          <mxGeometry height="28" width="1100" x="50" y="667" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_body" parent="1" style="text;html=1;strokeColor=#9673a6;fillColor=#f5f0f9;align=left;verticalAlign=top;fontSize=10;spacingLeft=8;spacingTop=5;" value="&lt;b&gt;Description:&lt;/b&gt; Highest security tier. Teams require a fully private AI agent with no public internet exposure. All Azure PaaS resources are accessed exclusively via Private Endpoints within a dedicated subnet.&lt;br/&gt;&lt;b&gt;Trigger:&lt;/b&gt; Team handles sensitive data (PII, regulated data) or operates in a compliance-constrained environment.&lt;br/&gt;&lt;b&gt;Functional Requirements:&lt;/b&gt; (1) Dedicated Agent Subnet with NSG deny-all inbound. (2) Private Endpoint Subnet (Subnet1) hosting pe-llm, pe-data, pe-srch. (3) All resources (OpenAI, AI Search, Cosmos DB, Storage, Key Vault) accessible only via private endpoints. (4) Azure Private DNS zones registered in Hub. (5) No public IP or service endpoint allowed.&lt;br/&gt;&lt;b&gt;Non-Functional:&lt;/b&gt; Data must not traverse public internet. Audit logs to centralised Log Analytics. RBAC: Team Contributor scoped to this project only." vertex="1">
+          <mxGeometry height="105" width="1100" x="50" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_hdr" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;rounded=1;spacingLeft=8;" value="Use Case 2 – LLM + AI Search Access Only (Standard)" vertex="1">
+          <mxGeometry height="28" width="1100" x="50" y="812" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_body" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#f0f9f0;align=left;verticalAlign=top;fontSize=10;spacingLeft=8;spacingTop=5;" value="&lt;b&gt;Description:&lt;/b&gt; Standard tier. Teams need access to LLM (OpenAI) and AI Search but do not require a fully isolated private network. Resources are accessed via VNet Service Endpoints or IP-restricted public endpoints.&lt;br/&gt;&lt;b&gt;Trigger:&lt;/b&gt; Team works with non-sensitive or internal data and primarily needs AI inference and search capabilities.&lt;br/&gt;&lt;b&gt;Functional Requirements:&lt;/b&gt; (1) App Subnet with outbound HTTPS to Azure PaaS service tags. (2) Azure OpenAI accessed via VNet service restriction. (3) AI Search accessed via IP allowlist + AAD auth. (4) Cosmos DB and Storage via Service Endpoints. (5) Key Vault via Service Endpoint for secrets.&lt;br/&gt;&lt;b&gt;Non-Functional:&lt;/b&gt; All denied traffic logged to Log Analytics. NSG flow logs enabled. No public inbound to subnet. RBAC: Team Contributor scoped to this project only." vertex="1">
+          <mxGeometry height="100" width="1100" x="50" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_hdr" parent="1" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;rounded=1;spacingLeft=8;" value="Use Case 3 – Shared Agent Resources (External to AI Foundry)" vertex="1">
+          <mxGeometry height="28" width="1100" x="50" y="952" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_body" parent="1" style="text;html=1;strokeColor=#d79b00;fillColor=#fffaf0;align=left;verticalAlign=top;fontSize=10;spacingLeft=8;spacingTop=5;" value="&lt;b&gt;Description:&lt;/b&gt; Teams need to connect their AI Foundry project to shared enterprise resources (Cosmos DB, Data Lake, AI Search) that exist outside of the AI Foundry Hub, in a shared services subscription or resource group.&lt;br/&gt;&lt;b&gt;Trigger:&lt;/b&gt; Team&#39;s data already resides in a shared platform (e.g. enterprise data lake) and duplication is not acceptable. Resources are shared across multiple AI Foundry projects.&lt;br/&gt;&lt;b&gt;Functional Requirements:&lt;/b&gt; (1) Project connects to external Cosmos DB and Data Lake via Private Endpoint cross-subscription. (2) Shared AI Search index accessible via Managed Identity. (3) RBAC: Reader role on shared resources per team Managed Identity. (4) Key Vault in shared subscription holds connection strings. (5) Private DNS entries registered in Hub DNS zone.&lt;br/&gt;&lt;b&gt;Non-Functional:&lt;/b&gt; Shared resources must enforce resource-level access control (no wildcard grants). Audit trail for all shared resource access. Teams cannot modify shared resources — read-only." vertex="1">
+          <mxGeometry height="120" width="1100" x="50" y="980" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="qI04yzRkPDkexCApRyD4" name="PRD - Page 2">
+    <mxGraphModel dx="3731" dy="2251" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hdr_bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1e3a5f;strokeColor=#1e3a5f;" value="" vertex="1">
+          <mxGeometry height="50" width="1100" x="50" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size:18px;font-weight:bold;&quot;&gt;AI Foundry Platform – PRD &amp; Technical Design Document (cont.)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="28" width="900" x="70" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="s5_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#1e3a5f;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;rounded=1;" value="5. Architecture &amp; Design Decisions" vertex="1">
+          <mxGeometry height="30" width="1100" x="50" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="s5_th1" parent="1" style="text;html=1;strokeColor=#999;fillColor=#dae8fc;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Decision" vertex="1">
+          <mxGeometry height="28" width="260" x="50" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="s5_th2" parent="1" style="text;html=1;strokeColor=#999;fillColor=#dae8fc;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Choice Made" vertex="1">
+          <mxGeometry height="28" width="280" x="310" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="s5_th3" parent="1" style="text;html=1;strokeColor=#999;fillColor=#dae8fc;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Rationale" vertex="1">
+          <mxGeometry height="28" width="560" x="590" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="d1a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Subscription model" vertex="1">
+          <mxGeometry height="26" width="260" x="50" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="d1b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Single subscription, multiple projects" vertex="1">
+          <mxGeometry height="26" width="280" x="310" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="d1c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Teams isolated by RBAC + VNet/Subnet. No compliance or billing boundary requiring separate subs." vertex="1">
+          <mxGeometry height="26" width="560" x="590" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="d2a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="AI Foundry topology" vertex="1">
+          <mxGeometry height="26" width="260" x="50" y="181" as="geometry" />
+        </mxCell>
+        <mxCell id="d2b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Single Hub, multiple Projects" vertex="1">
+          <mxGeometry height="26" width="280" x="310" y="181" as="geometry" />
+        </mxCell>
+        <mxCell id="d2c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Reduces infrastructure footprint. Shared Hub connections (OpenAI, Search) benefit all teams." vertex="1">
+          <mxGeometry height="26" width="560" x="590" y="181" as="geometry" />
+        </mxCell>
+        <mxCell id="d3a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Network isolation" vertex="1">
+          <mxGeometry height="26" width="260" x="50" y="207" as="geometry" />
+        </mxCell>
+        <mxCell id="d3b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Hub-Spoke VNet with VNet Peering" vertex="1">
+          <mxGeometry height="26" width="280" x="310" y="207" as="geometry" />
+        </mxCell>
+        <mxCell id="d3c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Centralised egress via Azure Firewall. DNS via Hub Private DNS Zones. UDR for force tunnelling." vertex="1">
+          <mxGeometry height="26" width="560" x="590" y="207" as="geometry" />
+        </mxCell>
+        <mxCell id="d4a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="UC1 private access" vertex="1">
+          <mxGeometry height="26" width="260" x="50" y="233" as="geometry" />
+        </mxCell>
+        <mxCell id="d4b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Private Endpoints only (pe-llm, pe-data, pe-srch)" vertex="1">
+          <mxGeometry height="26" width="280" x="310" y="233" as="geometry" />
+        </mxCell>
+        <mxCell id="d4c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Eliminates any public internet data path. Mandatory for PII/regulated data environments." vertex="1">
+          <mxGeometry height="26" width="560" x="590" y="233" as="geometry" />
+        </mxCell>
+        <mxCell id="d5a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="UC2 access method" vertex="1">
+          <mxGeometry height="26" width="260" x="50" y="259" as="geometry" />
+        </mxCell>
+        <mxCell id="d5b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Service Endpoints + VNet restrictions" vertex="1">
+          <mxGeometry height="26" width="280" x="310" y="259" as="geometry" />
+        </mxCell>
+        <mxCell id="d5c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Lower cost than private endpoints, sufficient for non-sensitive workloads. Simpler to manage." vertex="1">
+          <mxGeometry height="26" width="560" x="590" y="259" as="geometry" />
+        </mxCell>
+        <mxCell id="d6a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="UC3 external resources" vertex="1">
+          <mxGeometry height="26" width="260" x="50" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="d6b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Cross-sub Private Endpoint + Managed Identity" vertex="1">
+          <mxGeometry height="26" width="280" x="310" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="d6c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Avoids data duplication. Managed Identity removes credential management risk." vertex="1">
+          <mxGeometry height="26" width="560" x="590" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="s6_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#1e3a5f;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;rounded=1;" value="6. Security &amp; Networking Controls" vertex="1">
+          <mxGeometry height="30" width="1100" x="50" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="s6_body" parent="1" style="text;html=1;strokeColor=#cccccc;fillColor=#f9f9f9;align=left;verticalAlign=top;fontSize=10;spacingLeft=8;spacingTop=6;spacingRight=6;" value="&lt;b&gt;Identity &amp; Access:&lt;/b&gt; All resources use Azure Active Directory (Entra ID) authentication. No shared keys or connection strings in code. Managed Identity used per project. RBAC scoped to project level — teams cannot access sibling projects.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Network:&lt;/b&gt; Hub VNet (10.0.0.0/16) with Azure Firewall Premium for centralised egress. Each project gets a dedicated Spoke VNet (UC1: 10.1.x, UC2: 10.2.x, UC3: 10.3.x) peered to Hub. UDR forces all outbound through Firewall. NSGs deny all inbound by default, with explicit outbound rules only. Private DNS Zones in Hub resolve all privatelink.* domains.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Data Protection:&lt;/b&gt; All storage encrypted with Customer-Managed Keys (CMK) stored in centralised Key Vault. TLS 1.2+ enforced via Azure Policy. Soft delete and purge protection enabled on all Key Vaults. Defender for Cloud enabled across subscription.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Monitoring:&lt;/b&gt; All resources send diagnostic logs to centralised Log Analytics Workspace. NSG flow logs enabled. Azure Monitor alerts for unusual data egress, failed auth attempts, and policy violations." vertex="1">
+          <mxGeometry height="160" width="1100" x="50" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="s7_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#1e3a5f;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;rounded=1;" value="7. Resource Naming Conventions" vertex="1">
+          <mxGeometry height="30" width="1100" x="50" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="n_th1" parent="1" style="text;html=1;strokeColor=#999;fillColor=#dae8fc;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Resource Type" vertex="1">
+          <mxGeometry height="26" width="220" x="50" y="567" as="geometry" />
+        </mxCell>
+        <mxCell id="n_th2" parent="1" style="text;html=1;strokeColor=#999;fillColor=#dae8fc;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Naming Pattern" vertex="1">
+          <mxGeometry height="26" width="320" x="270" y="567" as="geometry" />
+        </mxCell>
+        <mxCell id="n_th3" parent="1" style="text;html=1;strokeColor=#999;fillColor=#dae8fc;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Example" vertex="1">
+          <mxGeometry height="26" width="560" x="590" y="567" as="geometry" />
+        </mxCell>
+        <mxCell id="n1a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Resource Group" vertex="1">
+          <mxGeometry height="24" width="220" x="50" y="593" as="geometry" />
+        </mxCell>
+        <mxCell id="n1b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="rg-aif-{env}-{project}-{region}" vertex="1">
+          <mxGeometry height="24" width="320" x="270" y="593" as="geometry" />
+        </mxCell>
+        <mxCell id="n1c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="rg-aif-prod-lirr-eus" vertex="1">
+          <mxGeometry height="24" width="560" x="590" y="593" as="geometry" />
+        </mxCell>
+        <mxCell id="n2a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="AI Foundry Hub" vertex="1">
+          <mxGeometry height="24" width="220" x="50" y="617" as="geometry" />
+        </mxCell>
+        <mxCell id="n2b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="aih-{org}-{env}-{region}" vertex="1">
+          <mxGeometry height="24" width="320" x="270" y="617" as="geometry" />
+        </mxCell>
+        <mxCell id="n2c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="aih-nymta-prod-eus" vertex="1">
+          <mxGeometry height="24" width="560" x="590" y="617" as="geometry" />
+        </mxCell>
+        <mxCell id="n3a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="AI Foundry Project" vertex="1">
+          <mxGeometry height="24" width="220" x="50" y="641" as="geometry" />
+        </mxCell>
+        <mxCell id="n3b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="aip-{team}-{env}" vertex="1">
+          <mxGeometry height="24" width="320" x="270" y="641" as="geometry" />
+        </mxCell>
+        <mxCell id="n3c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="aip-lirr-prod / aip-omb-prod" vertex="1">
+          <mxGeometry height="24" width="560" x="590" y="641" as="geometry" />
+        </mxCell>
+        <mxCell id="n4a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="VNet (Spoke)" vertex="1">
+          <mxGeometry height="24" width="220" x="50" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="n4b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="vnet-spoke-{team}-{env}" vertex="1">
+          <mxGeometry height="24" width="320" x="270" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="n4c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="vnet-spoke-lirr-prod" vertex="1">
+          <mxGeometry height="24" width="560" x="590" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="n5a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Private Endpoint" vertex="1">
+          <mxGeometry height="24" width="220" x="50" y="689" as="geometry" />
+        </mxCell>
+        <mxCell id="n5b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="pe-{service}-{team}-{env}" vertex="1">
+          <mxGeometry height="24" width="320" x="270" y="689" as="geometry" />
+        </mxCell>
+        <mxCell id="n5c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="pe-llm-lirr-prod / pe-srch-lirr-prod" vertex="1">
+          <mxGeometry height="24" width="560" x="590" y="689" as="geometry" />
+        </mxCell>
+        <mxCell id="n6a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Key Vault" vertex="1">
+          <mxGeometry height="24" width="220" x="50" y="713" as="geometry" />
+        </mxCell>
+        <mxCell id="n6b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="kv-{team}-{env}-{region}" vertex="1">
+          <mxGeometry height="24" width="320" x="270" y="713" as="geometry" />
+        </mxCell>
+        <mxCell id="n6c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="kv-lirr-prod-eus (max 24 chars)" vertex="1">
+          <mxGeometry height="24" width="560" x="590" y="713" as="geometry" />
+        </mxCell>
+        <mxCell id="s8_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#1e3a5f;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;rounded=1;" value="8. Onboarding Process (Step-by-Step)" vertex="1">
+          <mxGeometry height="30" width="1100" x="50" y="753" as="geometry" />
+        </mxCell>
+        <mxCell id="s8_body" parent="1" style="text;html=1;strokeColor=#cccccc;fillColor=#f9f9f9;align=left;verticalAlign=top;fontSize=10;spacingLeft=8;spacingTop=6;spacingRight=6;" value="&lt;b&gt;Step 1 – Project Request:&lt;/b&gt; Team submits onboarding request via service desk ticket. Required fields: team name, project name, use case (UC1/UC2/UC3), data classification, list of resources needed, and designated technical lead.&lt;br/&gt;&lt;b&gt;Step 2 – Intake &amp; Requirements:&lt;/b&gt; Platform team reviews request, confirms use case, validates subnet CIDR availability, and assigns a VNet address space.&lt;br/&gt;&lt;b&gt;Step 3 – Create AI Foundry Project:&lt;/b&gt; Platform team creates a new Project under the shared AI Hub using the appropriate IaC template (Bicep/Terraform module per use case).&lt;br/&gt;&lt;b&gt;Step 4 – Configure RBAC:&lt;/b&gt; Assign team AAD group to Contributor role scoped to their AI Foundry Project. Managed Identity created for the project.&lt;br/&gt;&lt;b&gt;Step 5 – Connect Resources:&lt;/b&gt; Register required connections (OpenAI, AI Search, Cosmos DB, Storage, Key Vault) to the project. For UC1: deploy private endpoints. For UC2: configure service endpoints. For UC3: register cross-sub private endpoints.&lt;br/&gt;&lt;b&gt;Step 6 – Private Endpoints (UC1 only):&lt;/b&gt; Deploy pe-llm, pe-data, pe-srch in Subnet1. Register DNS A-records in Hub Private DNS Zones.&lt;br/&gt;&lt;b&gt;Step 7 – Validation:&lt;/b&gt; Platform team runs connectivity tests and verifies RBAC isolation (no cross-project access). Team receives access credentials.&lt;br/&gt;&lt;b&gt;Step 8 – Handoff:&lt;/b&gt; Team notified, documentation and runbook shared. Project marked &lt;b&gt;LIVE&lt;/b&gt;." vertex="1">
+          <mxGeometry height="175" width="1100" x="50" y="785" as="geometry" />
+        </mxCell>
+        <mxCell id="s9_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#1e3a5f;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;rounded=1;" value="9. Risks, Assumptions &amp; Open Questions" vertex="1">
+          <mxGeometry height="30" width="1100" x="50" y="975" as="geometry" />
+        </mxCell>
+        <mxCell id="r_th1" parent="1" style="text;html=1;strokeColor=#999;fillColor=#f8cecc;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Item" vertex="1">
+          <mxGeometry height="26" width="80" x="50" y="1007" as="geometry" />
+        </mxCell>
+        <mxCell id="r_th2" parent="1" style="text;html=1;strokeColor=#999;fillColor=#f8cecc;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Description" vertex="1">
+          <mxGeometry height="26" width="450" x="130" y="1007" as="geometry" />
+        </mxCell>
+        <mxCell id="r_th3" parent="1" style="text;html=1;strokeColor=#999;fillColor=#f8cecc;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Status / Owner" vertex="1">
+          <mxGeometry height="26" width="570" x="580" y="1007" as="geometry" />
+        </mxCell>
+        <mxCell id="r1a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffe6cc;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;" value="RISK" vertex="1">
+          <mxGeometry height="26" width="80" x="50" y="1033" as="geometry" />
+        </mxCell>
+        <mxCell id="r1b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Single subscription quota limits may block multiple teams provisioning simultaneously" vertex="1">
+          <mxGeometry height="26" width="450" x="130" y="1033" as="geometry" />
+        </mxCell>
+        <mxCell id="r1c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Mitigation: Pre-request quota increases. Monitor usage via Azure Cost + Quota alerts. Owner: Platform Team" vertex="1">
+          <mxGeometry height="26" width="570" x="580" y="1033" as="geometry" />
+        </mxCell>
+        <mxCell id="r2a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffe6cc;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;" value="RISK" vertex="1">
+          <mxGeometry height="26" width="80" x="50" y="1059" as="geometry" />
+        </mxCell>
+        <mxCell id="r2b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="UC1 private endpoint DNS misconfig could cause connectivity failures silently" vertex="1">
+          <mxGeometry height="26" width="450" x="130" y="1059" as="geometry" />
+        </mxCell>
+        <mxCell id="r2c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Mitigation: Automated DNS validation script in onboarding pipeline. Owner: Network Team" vertex="1">
+          <mxGeometry height="26" width="570" x="580" y="1059" as="geometry" />
+        </mxCell>
+        <mxCell id="r3a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#d5e8d4;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;" value="ASSUMPTION" vertex="1">
+          <mxGeometry height="26" width="80" x="50" y="1085" as="geometry" />
+        </mxCell>
+        <mxCell id="r3b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="All teams will use AAD-backed identities (no local accounts or service principals with passwords)" vertex="1">
+          <mxGeometry height="26" width="450" x="130" y="1085" as="geometry" />
+        </mxCell>
+        <mxCell id="r3c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="To be confirmed with security team. Owner: Security Architect" vertex="1">
+          <mxGeometry height="26" width="570" x="580" y="1085" as="geometry" />
+        </mxCell>
+        <mxCell id="r4a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#dae8fc;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;" value="OPEN Q" vertex="1">
+          <mxGeometry height="26" width="80" x="50" y="1111" as="geometry" />
+        </mxCell>
+        <mxCell id="r4b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Should UC1 teams (LIRR, OMB) require separate subscriptions for billing chargeback?" vertex="1">
+          <mxGeometry height="26" width="450" x="130" y="1111" as="geometry" />
+        </mxCell>
+        <mxCell id="r4c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#f9f9f9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Pending finance/compliance review. Default: single sub with tag-based cost allocation. Owner: Finance + Platform" vertex="1">
+          <mxGeometry height="26" width="570" x="580" y="1111" as="geometry" />
+        </mxCell>
+        <mxCell id="r5a" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#dae8fc;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;" value="OPEN Q" vertex="1">
+          <mxGeometry height="26" width="80" x="50" y="1137" as="geometry" />
+        </mxCell>
+        <mxCell id="r5b" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Is IaC (Bicep/Terraform) the agreed deployment method or will portal-based provisioning be allowed?" vertex="1">
+          <mxGeometry height="26" width="450" x="130" y="1137" as="geometry" />
+        </mxCell>
+        <mxCell id="r5c" parent="1" style="text;html=1;strokeColor=#ccc;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Recommendation: IaC-only via approved pipeline. Portal changes rejected by Policy. Owner: Platform Lead" vertex="1">
+          <mxGeometry height="26" width="570" x="580" y="1137" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=center;verticalAlign=middle;fontSize=10;fontColor=#666666;" value="CONFIDENTIAL – AI Foundry Platform Team | Version 1.0 DRAFT | March 2026 | For internal use only" vertex="1">
+          <mxGeometry height="28" width="1100" x="50" y="1178" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="vCB6Nk1sMXNcWoTIkmnZ" name="README - Page 1">
+    <mxGraphModel dx="3731" dy="2251" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title_bg" parent="1" style="rounded=0;fillColor=#0d1117;strokeColor=#0d1117;" value="" vertex="1">
+          <mxGeometry height="110" width="1160" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="title_h1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" value="&lt;font color=&#39;#58a6ff&#39; style=&#39;font-size:26px;font-weight:bold;&#39;&gt;🏗️ AI Foundry Platform – Hub-Based Architecture&lt;/font&gt;" vertex="1">
+          <mxGeometry height="38" width="1000" x="60" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="title_sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" value="&lt;font color=&#39;#8b949e&#39; style=&#39;font-size:12px;&#39;&gt;A centralised Azure AI Foundry Hub hosting multiple agency projects with Hub-and-Spoke networking, RBAC isolation, and three onboarding patterns.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="1000" x="60" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="badges" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" value="&lt;font color=&#39;#3fb950&#39; style=&#39;font-size:11px;&#39;&gt;● Status: DRAFT    ● Azure AI Foundry    ● Hub-Based Model    ● Version 1.0    ● March 2026&lt;/font&gt;" vertex="1">
+          <mxGeometry height="22" width="900" x="60" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="toc_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;spacingLeft=10;" value="📋  Table of Contents" vertex="1">
+          <mxGeometry height="32" width="1160" x="40" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="toc_body" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=middle;spacingLeft=10;" value="&lt;font style=&#39;font-size:11px;&#39; color=&#39;#c9d1d9&#39;&gt;1. Overview    2. Architecture Model    3. Network Topology    4. Use Cases    5. Azure Resource Inventory    6. Security Controls    7. RBAC Model    8. Naming Conventions    9. Onboarding Guide    10. IaC &amp; Deployment    11. Prerequisites    12. FAQ    13. Contact&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="1160" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;spacingLeft=10;" value="1. Overview" vertex="1">
+          <mxGeometry height="34" width="1160" x="40" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_body" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;spacingLeft=12;spacingRight=12;spacingTop=8;" value="&lt;p style=&#39;font-size:11px;color:#c9d1d9;&#39;&gt;The &lt;b&gt;&lt;font color=&#39;#f0883e&#39;&gt;AI Foundry Platform&lt;/font&gt;&lt;/b&gt; is a &lt;b&gt;Hub-Based Azure AI Foundry deployment&lt;/b&gt; that enables multiple agency teams to onboard AI projects quickly, securely, and consistently. Rather than each team independently provisioning AI infrastructure, all projects share a single AI Foundry Hub — isolating teams through Azure RBAC and dedicated VNet spoke networks.&lt;/p&gt;&lt;p style=&#39;font-size:11px;color:#c9d1d9;&#39;&gt;This architecture was designed to address the three most common onboarding patterns encountered across agency teams, ranging from fully private agent deployments requiring zero public internet exposure, to lightweight LLM access, to projects that consume shared enterprise data resources.&lt;/p&gt;&lt;p style=&#39;font-size:11px;color:#c9d1d9;&#39;&gt;&lt;b&gt;What this repo/document contains:&lt;/b&gt; Architecture diagrams (Pages 1–2), PRD &amp; Technical Design (Pages 3–4), and this README (Page 5). The draw.io file is the single source of truth for all design artifacts.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="118" width="1160" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;spacingLeft=10;" value="2. Architecture Model" vertex="1">
+          <mxGeometry height="34" width="1160" x="40" y="392" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_body" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;spacingLeft=12;spacingRight=12;spacingTop=8;" value="&lt;p style=&#39;font-size:11px;color:#c9d1d9;&#39;&gt;This platform uses the &lt;b&gt;&lt;font color=&#39;#3fb950&#39;&gt;Hub + Projects model&lt;/font&gt;&lt;/b&gt; — one AI Foundry Hub owns the shared infrastructure and acts as the governance boundary. Each team onboards as a &lt;b&gt;Project&lt;/b&gt; under this Hub. The Hub is &lt;i&gt;not&lt;/i&gt; a separate deployment per team (that would be the Foundry Projects-only model, which is higher cost and loses shared governance).&lt;/p&gt;&lt;p style=&#39;font-size:11px;color:#c9d1d9;&#39;&gt;&lt;b&gt;Hub responsibilities:&lt;/b&gt; Owns the AI Foundry resource, shared connected resources (Azure OpenAI, AI Search, Storage, Key Vault), VNet peering configs, and Private DNS Zones. &lt;b&gt;Project responsibilities:&lt;/b&gt; Team RBAC, per-project connected resources (where UC requires), private endpoints scoped to the project spoke, and workload compute.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="110" width="1160" x="40" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="mc_th1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Attribute" vertex="1">
+          <mxGeometry height="28" width="220" x="40" y="548" as="geometry" />
+        </mxCell>
+        <mxCell id="mc_th2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#1a7f37;fontColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Hub-Based (THIS architecture)" vertex="1">
+          <mxGeometry height="28" width="380" x="260" y="548" as="geometry" />
+        </mxCell>
+        <mxCell id="mc_th3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#6e1010;fontColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Foundry Projects-Only (alternative)" vertex="1">
+          <mxGeometry height="28" width="560" x="640" y="548" as="geometry" />
+        </mxCell>
+        <mxCell id="mc1a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="Cost" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="576" as="geometry" />
+        </mxCell>
+        <mxCell id="mc1b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#3fb950;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="✅ Lower – shared OpenAI, Search, Storage" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="576" as="geometry" />
+        </mxCell>
+        <mxCell id="mc1c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#f85149;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="❌ Higher – duplicated resources per team" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="576" as="geometry" />
+        </mxCell>
+        <mxCell id="mc2a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="Governance" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="mc2b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#3fb950;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="✅ Centralised at Hub (policies, DNS, monitoring)" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="mc2c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#f85149;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="❌ Per-project, inconsistent across teams" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="mc3a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="Team isolation" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="624" as="geometry" />
+        </mxCell>
+        <mxCell id="mc3b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#3fb950;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="✅ RBAC + subnet-level isolation per project" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="624" as="geometry" />
+        </mxCell>
+        <mxCell id="mc3c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="✅ Full resource-level isolation (overkill for most)" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="624" as="geometry" />
+        </mxCell>
+        <mxCell id="mc4a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="Onboarding speed" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="648" as="geometry" />
+        </mxCell>
+        <mxCell id="mc4b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#3fb950;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="✅ Fast – new Project under existing Hub (&lt;5 days)" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="648" as="geometry" />
+        </mxCell>
+        <mxCell id="mc4c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#f85149;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="❌ Slow – new Hub + infrastructure per team" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="648" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;spacingLeft=10;" value="3. Network Topology" vertex="1">
+          <mxGeometry height="34" width="1160" x="40" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_body" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;spacingLeft=12;spacingRight=12;spacingTop=6;" value="&lt;p style=&#39;font-size:11px;color:#c9d1d9;&#39;&gt;The platform uses an &lt;b&gt;&lt;font color=&#39;#79c0ff&#39;&gt;Azure Hub-and-Spoke VNet topology&lt;/font&gt;&lt;/b&gt; within a single subscription. All egress traffic is force-tunnelled through Azure Firewall Premium in the Hub VNet. Each use case gets a dedicated Spoke VNet peered to the Hub.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="56" width="1160" x="40" y="724" as="geometry" />
+        </mxCell>
+        <mxCell id="nt_th1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Component" vertex="1">
+          <mxGeometry height="26" width="230" x="40" y="792" as="geometry" />
+        </mxCell>
+        <mxCell id="nt_th2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Address Space" vertex="1">
+          <mxGeometry height="26" width="170" x="270" y="792" as="geometry" />
+        </mxCell>
+        <mxCell id="nt_th3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Key Resources" vertex="1">
+          <mxGeometry height="26" width="760" x="440" y="792" as="geometry" />
+        </mxCell>
+        <mxCell id="nt1a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#79c0ff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;fontStyle=1;" value="Hub VNet" vertex="1">
+          <mxGeometry height="24" width="230" x="40" y="818" as="geometry" />
+        </mxCell>
+        <mxCell id="nt1b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=center;verticalAlign=middle;fontSize=10;" value="10.0.0.0/16" vertex="1">
+          <mxGeometry height="24" width="170" x="270" y="818" as="geometry" />
+        </mxCell>
+        <mxCell id="nt1c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="Azure Firewall Premium, VPN/ExpressRoute GW, Bastion, Private DNS Zones, UDR, NSG, DDoS Standard" vertex="1">
+          <mxGeometry height="24" width="760" x="440" y="818" as="geometry" />
+        </mxCell>
+        <mxCell id="nt2a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#d2a8ff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;fontStyle=1;" value="Spoke VNet – UC1 (Private Agent)" vertex="1">
+          <mxGeometry height="24" width="230" x="40" y="842" as="geometry" />
+        </mxCell>
+        <mxCell id="nt2b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=center;verticalAlign=middle;fontSize=10;" value="10.1.0.0/16" vertex="1">
+          <mxGeometry height="24" width="170" x="270" y="842" as="geometry" />
+        </mxCell>
+        <mxCell id="nt2c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="Agent Subnet (10.1.1.0/24) + Private Endpoint Subnet (10.1.2.0/24) | pe-llm, pe-data, pe-srch | NSG: deny-all inbound" vertex="1">
+          <mxGeometry height="24" width="760" x="440" y="842" as="geometry" />
+        </mxCell>
+        <mxCell id="nt3a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#56d364;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;fontStyle=1;" value="Spoke VNet – UC2 (LLM + Search)" vertex="1">
+          <mxGeometry height="24" width="230" x="40" y="866" as="geometry" />
+        </mxCell>
+        <mxCell id="nt3b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=center;verticalAlign=middle;fontSize=10;" value="10.2.0.0/16" vertex="1">
+          <mxGeometry height="24" width="170" x="270" y="866" as="geometry" />
+        </mxCell>
+        <mxCell id="nt3c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="App Subnet (10.2.1.0/24) | Service Endpoints: Microsoft.CognitiveServices, Microsoft.Storage, Microsoft.KeyVault | NSG: deny inbound" vertex="1">
+          <mxGeometry height="24" width="760" x="440" y="866" as="geometry" />
+        </mxCell>
+        <mxCell id="nt4a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#e3b341;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;fontStyle=1;" value="Spoke VNet – UC3 (Shared Resources)" vertex="1">
+          <mxGeometry height="24" width="230" x="40" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="nt4b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=center;verticalAlign=middle;fontSize=10;" value="10.3.0.0/16" vertex="1">
+          <mxGeometry height="24" width="170" x="270" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="nt4c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="Shared Services Subnet (10.3.1.0/24) | Cross-sub Private Endpoints to Cosmos DB, Data Lake, AI Search | Managed Identity access" vertex="1">
+          <mxGeometry height="24" width="760" x="440" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_hdr" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;spacingLeft=10;" value="4. Use Cases" vertex="1">
+          <mxGeometry height="34" width="1160" x="40" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_box" parent="1" style="text;html=1;strokeColor=#6e40c9;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=12;spacingTop=8;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#d2a8ff&#39;&gt;Use Case 1 – Private Agent Capability&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#8b949e&#39; style=&#39;font-size:10px;&#39;&gt;Target teams: LIRR, OMB (high-security, regulated data environments)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;&lt;b&gt;Pattern:&lt;/b&gt; Fully private. Zero public internet path. All PaaS resources accessed through Private Endpoints only.&lt;br/&gt;&lt;b&gt;Network:&lt;/b&gt; Dedicated Agent Subnet + Private Endpoint Subnet (Subnet1). NSG deny-all inbound. UDR to Firewall.&lt;br/&gt;&lt;b&gt;Resources:&lt;/b&gt; Azure OpenAI (pe-llm), AI Search (pe-srch), Cosmos DB (pe-data), Azure Storage, Key Vault — all via PE.&lt;br/&gt;&lt;b&gt;DNS:&lt;/b&gt; Private DNS A-records in Hub DNS Zones (privatelink.openai.azure.com, privatelink.search.windows.net, privatelink.documents.azure.com).&lt;br/&gt;&lt;b&gt;When to use:&lt;/b&gt; PII data, regulated workloads, zero-trust requirement, agency mandates no public endpoint.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="1160" x="40" y="966" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_box" parent="1" style="text;html=1;strokeColor=#238636;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=12;spacingTop=8;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#56d364&#39;&gt;Use Case 2 – LLM + AI Search Access Only&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#8b949e&#39; style=&#39;font-size:10px;&#39;&gt;Target teams: Standard agency teams needing AI inference and search, no sensitive data&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;&lt;b&gt;Pattern:&lt;/b&gt; Service Endpoints + VNet restrictions. No private endpoints required. Simpler, lower cost.&lt;br/&gt;&lt;b&gt;Network:&lt;/b&gt; App Subnet. Service Endpoints for CognitiveServices, Storage, KeyVault. NSG deny inbound, allow HTTPS to Azure service tags.&lt;br/&gt;&lt;b&gt;Resources:&lt;/b&gt; Azure OpenAI (VNet SR), AI Search (IP allowlist + AAD), Cosmos DB (Service Endpoint), Storage, Key Vault.&lt;br/&gt;&lt;b&gt;Monitoring:&lt;/b&gt; NSG flow logs + Log Analytics. All denied traffic captured.&lt;br/&gt;&lt;b&gt;When to use:&lt;/b&gt; Internal data, non-regulated, team primarily needs LLM calls and search indexing.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="1160" x="40" y="1082" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_box" parent="1" style="text;html=1;strokeColor=#9e6a03;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=12;spacingTop=8;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#e3b341&#39;&gt;Use Case 3 – Shared Agent Resources&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#8b949e&#39; style=&#39;font-size:10px;&#39;&gt;Target teams: Projects that consume shared enterprise data platforms&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;&lt;b&gt;Pattern:&lt;/b&gt; Cross-subscription Private Endpoints + Managed Identity. Resources live outside AI Foundry in a shared services subscription.&lt;br/&gt;&lt;b&gt;Resources:&lt;/b&gt; Cosmos DB, Data Lake Storage Container, AI Search (all shared, PE from Spoke). Key Vault in shared sub holds connection strings.&lt;br/&gt;&lt;b&gt;Access control:&lt;/b&gt; Each project&#39;s Managed Identity is granted Reader/Data Reader role on shared resources. No wildcard grants. Read-only access enforced.&lt;br/&gt;&lt;b&gt;DNS:&lt;/b&gt; Private endpoint DNS A-records registered in Hub DNS Zones for cross-sub resolution.&lt;br/&gt;&lt;b&gt;When to use:&lt;/b&gt; Data already exists in enterprise data lake; duplication not acceptable; AI Foundry project reads from shared platform.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="1160" x="40" y="1198" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="4AtWfzKxBIR2yPHvgF5z" name="README - Page 2">
+    <mxGraphModel dx="6530" dy="3940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hdr" parent="1" style="rounded=0;fillColor=#0d1117;strokeColor=#0d1117;" value="" vertex="1">
+          <mxGeometry height="46" width="1160" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr_t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" value="&lt;font color=&#39;#58a6ff&#39; style=&#39;font-size:18px;font-weight:bold;&#39;&gt;AI Foundry Platform – README (cont.)  |  Sections 5–13&lt;/font&gt;" vertex="1">
+          <mxGeometry height="28" width="900" x="60" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="s5h" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;spacingLeft=10;" value="5.  Azure Resource Inventory" vertex="1">
+          <mxGeometry height="32" width="1160" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_h1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Resource" vertex="1">
+          <mxGeometry height="26" width="220" x="40" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_h2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="SKU / Tier" vertex="1">
+          <mxGeometry height="26" width="160" x="260" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_h3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#6e40c9;fontColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="UC1" vertex="1">
+          <mxGeometry height="26" width="80" x="420" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_h4" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#1a7f37;fontColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="UC2" vertex="1">
+          <mxGeometry height="26" width="80" x="500" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_h5" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#9e6a03;fontColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="UC3" vertex="1">
+          <mxGeometry height="26" width="80" x="580" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_h6" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Notes" vertex="1">
+          <mxGeometry height="26" width="540" x="660" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_0a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="AI Foundry Hub" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_0b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#8b949e;align=center;verticalAlign=middle;fontSize=10;" value="Standard S0" vertex="1">
+          <mxGeometry height="24" width="160" x="260" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_0c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#d2a8ff;align=center;verticalAlign=middle;fontSize=9;" value="Shared" vertex="1">
+          <mxGeometry height="24" width="80" x="420" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_0d" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#56d364;align=center;verticalAlign=middle;fontSize=9;" value="Shared" vertex="1">
+          <mxGeometry height="24" width="80" x="500" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_0e" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#e3b341;align=center;verticalAlign=middle;fontSize=9;" value="Shared" vertex="1">
+          <mxGeometry height="24" width="80" x="580" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_0f" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Single Hub hosts all projects" vertex="1">
+          <mxGeometry height="24" width="540" x="660" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_1a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Azure OpenAI Service" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_1b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=center;verticalAlign=middle;fontSize=10;" value="Standard S0" vertex="1">
+          <mxGeometry height="24" width="160" x="260" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_1c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#d2a8ff;align=center;verticalAlign=middle;fontSize=9;" value="Private EP" vertex="1">
+          <mxGeometry height="24" width="80" x="420" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_1d" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#56d364;align=center;verticalAlign=middle;fontSize=9;" value="Svc Endpoint" vertex="1">
+          <mxGeometry height="24" width="80" x="500" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_1e" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#e3b341;align=center;verticalAlign=middle;fontSize=9;" value="Shared" vertex="1">
+          <mxGeometry height="24" width="80" x="580" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_1f" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="GPT-4o deployed per Hub" vertex="1">
+          <mxGeometry height="24" width="540" x="660" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_2a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Azure AI Search" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_2b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#8b949e;align=center;verticalAlign=middle;fontSize=10;" value="Standard S1" vertex="1">
+          <mxGeometry height="24" width="160" x="260" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_2c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#d2a8ff;align=center;verticalAlign=middle;fontSize=9;" value="Private EP" vertex="1">
+          <mxGeometry height="24" width="80" x="420" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_2d" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#56d364;align=center;verticalAlign=middle;fontSize=9;" value="IP Restrict" vertex="1">
+          <mxGeometry height="24" width="80" x="500" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_2e" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#e3b341;align=center;verticalAlign=middle;fontSize=9;" value="Shared index" vertex="1">
+          <mxGeometry height="24" width="80" x="580" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_2f" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Semantic search enabled" vertex="1">
+          <mxGeometry height="24" width="540" x="660" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_3a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Cosmos DB" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_3b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=center;verticalAlign=middle;fontSize=10;" value="Serverless" vertex="1">
+          <mxGeometry height="24" width="160" x="260" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_3c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#d2a8ff;align=center;verticalAlign=middle;fontSize=9;" value="Private EP" vertex="1">
+          <mxGeometry height="24" width="80" x="420" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_3d" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#56d364;align=center;verticalAlign=middle;fontSize=9;" value="Svc Endpoint" vertex="1">
+          <mxGeometry height="24" width="80" x="500" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_3e" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#e3b341;align=center;verticalAlign=middle;fontSize=9;" value="Shared PE" vertex="1">
+          <mxGeometry height="24" width="80" x="580" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_3f" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="NoSQL; auto-scale RU" vertex="1">
+          <mxGeometry height="24" width="540" x="660" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_4a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Azure Storage (ADLS)" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_4b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#8b949e;align=center;verticalAlign=middle;fontSize=10;" value="Standard LRS" vertex="1">
+          <mxGeometry height="24" width="160" x="260" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_4c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#d2a8ff;align=center;verticalAlign=middle;fontSize=9;" value="Private EP" vertex="1">
+          <mxGeometry height="24" width="80" x="420" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_4d" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#56d364;align=center;verticalAlign=middle;fontSize=9;" value="Svc Endpoint" vertex="1">
+          <mxGeometry height="24" width="80" x="500" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_4e" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#e3b341;align=center;verticalAlign=middle;fontSize=9;" value="Shared PE" vertex="1">
+          <mxGeometry height="24" width="80" x="580" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_4f" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Hierarchical namespace on" vertex="1">
+          <mxGeometry height="24" width="540" x="660" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_5a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Azure Key Vault" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_5b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=center;verticalAlign=middle;fontSize=10;" value="Standard" vertex="1">
+          <mxGeometry height="24" width="160" x="260" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_5c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#d2a8ff;align=center;verticalAlign=middle;fontSize=9;" value="Private EP" vertex="1">
+          <mxGeometry height="24" width="80" x="420" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_5d" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#56d364;align=center;verticalAlign=middle;fontSize=9;" value="Svc Endpoint" vertex="1">
+          <mxGeometry height="24" width="80" x="500" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_5e" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#e3b341;align=center;verticalAlign=middle;fontSize=9;" value="Shared PE" vertex="1">
+          <mxGeometry height="24" width="80" x="580" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_5f" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Soft-delete + purge protect" vertex="1">
+          <mxGeometry height="24" width="540" x="660" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_6a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Azure Firewall" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_6b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#8b949e;align=center;verticalAlign=middle;fontSize=10;" value="Premium" vertex="1">
+          <mxGeometry height="24" width="160" x="260" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_6c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#d2a8ff;align=center;verticalAlign=middle;fontSize=9;" value="Hub shared" vertex="1">
+          <mxGeometry height="24" width="80" x="420" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_6d" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#56d364;align=center;verticalAlign=middle;fontSize=9;" value="Hub shared" vertex="1">
+          <mxGeometry height="24" width="80" x="500" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_6e" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#e3b341;align=center;verticalAlign=middle;fontSize=9;" value="Hub shared" vertex="1">
+          <mxGeometry height="24" width="80" x="580" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_6f" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="IDPS enabled; TLS inspect" vertex="1">
+          <mxGeometry height="24" width="540" x="660" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_7a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Log Analytics WS" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_7b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=center;verticalAlign=middle;fontSize=10;" value="Pay-as-you-go" vertex="1">
+          <mxGeometry height="24" width="160" x="260" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_7c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#d2a8ff;align=center;verticalAlign=middle;fontSize=9;" value="All" vertex="1">
+          <mxGeometry height="24" width="80" x="420" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_7d" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#56d364;align=center;verticalAlign=middle;fontSize=9;" value="All" vertex="1">
+          <mxGeometry height="24" width="80" x="500" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_7e" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#e3b341;align=center;verticalAlign=middle;fontSize=9;" value="All" vertex="1">
+          <mxGeometry height="24" width="80" x="580" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_7f" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Centralised; 90-day retain" vertex="1">
+          <mxGeometry height="24" width="540" x="660" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_8a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="VNet (Spoke)" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_8b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#8b949e;align=center;verticalAlign=middle;fontSize=10;" value="N/A" vertex="1">
+          <mxGeometry height="24" width="160" x="260" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_8c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#d2a8ff;align=center;verticalAlign=middle;fontSize=9;" value="10.1.0.0/16" vertex="1">
+          <mxGeometry height="24" width="80" x="420" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_8d" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#56d364;align=center;verticalAlign=middle;fontSize=9;" value="10.2.0.0/16" vertex="1">
+          <mxGeometry height="24" width="80" x="500" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_8e" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#e3b341;align=center;verticalAlign=middle;fontSize=9;" value="10.3.0.0/16" vertex="1">
+          <mxGeometry height="24" width="80" x="580" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_8f" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Each peered to Hub VNet" vertex="1">
+          <mxGeometry height="24" width="540" x="660" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_9a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Managed Identity" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_9b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=center;verticalAlign=middle;fontSize=10;" value="System-assigned" vertex="1">
+          <mxGeometry height="24" width="160" x="260" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_9c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#d2a8ff;align=center;verticalAlign=middle;fontSize=9;" value="Per project" vertex="1">
+          <mxGeometry height="24" width="80" x="420" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_9d" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#56d364;align=center;verticalAlign=middle;fontSize=9;" value="Per project" vertex="1">
+          <mxGeometry height="24" width="80" x="500" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_9e" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#e3b341;align=center;verticalAlign=middle;fontSize=9;" value="Per project" vertex="1">
+          <mxGeometry height="24" width="80" x="580" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_9f" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Used for all resource auth" vertex="1">
+          <mxGeometry height="24" width="540" x="660" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_10a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Azure Bastion" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_10b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#8b949e;align=center;verticalAlign=middle;fontSize=10;" value="Standard" vertex="1">
+          <mxGeometry height="24" width="160" x="260" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_10c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#d2a8ff;align=center;verticalAlign=middle;fontSize=9;" value="Hub shared" vertex="1">
+          <mxGeometry height="24" width="80" x="420" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_10d" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#56d364;align=center;verticalAlign=middle;fontSize=9;" value="Hub shared" vertex="1">
+          <mxGeometry height="24" width="80" x="500" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_10e" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#e3b341;align=center;verticalAlign=middle;fontSize=9;" value="Hub shared" vertex="1">
+          <mxGeometry height="24" width="80" x="580" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_10f" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Secure RDP/SSH; no public IP" vertex="1">
+          <mxGeometry height="24" width="540" x="660" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_11a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Container Registry" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_11b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=center;verticalAlign=middle;fontSize=10;" value="Standard" vertex="1">
+          <mxGeometry height="24" width="160" x="260" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_11c" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#d2a8ff;align=center;verticalAlign=middle;fontSize=9;" value="Optional" vertex="1">
+          <mxGeometry height="24" width="80" x="420" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_11d" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#56d364;align=center;verticalAlign=middle;fontSize=9;" value="Optional" vertex="1">
+          <mxGeometry height="24" width="80" x="500" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_11e" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#e3b341;align=center;verticalAlign=middle;fontSize=9;" value="Shared" vertex="1">
+          <mxGeometry height="24" width="80" x="580" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="ri_11f" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#8b949e;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="For AI model container images" vertex="1">
+          <mxGeometry height="24" width="540" x="660" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="s6h" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;spacingLeft=10;" value="6.  Security Controls" vertex="1">
+          <mxGeometry height="32" width="1160" x="40" y="442" as="geometry" />
+        </mxCell>
+        <mxCell id="sec_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#f0883e&#39;&gt;🔐 Identity &amp; Authentication&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;All authentication via Azure Active Directory (Entra ID). No shared keys, passwords, or connection strings in code. Managed Identity per project for all resource access. Conditional Access enforced for admin operations.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="1160" x="40" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="sec_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#79c0ff&#39;&gt;🛡️ Network Security&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;NSG deny-all inbound on all subnets. Outbound restricted to Azure service tags only. Azure Firewall Premium with IDPS enabled. TLS inspection active. Force-tunnel via UDR – no direct internet egress from any spoke.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="1160" x="40" y="526" as="geometry" />
+        </mxCell>
+        <mxCell id="sec_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#56d364&#39;&gt;🔑 Data Protection&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;All storage encrypted with Customer-Managed Keys (CMK) in centralised Key Vault. TLS 1.2+ enforced via Azure Policy. Key Vault soft-delete (90 days) and purge protection enabled. No plaintext secrets in repos or configs.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="1160" x="40" y="578" as="geometry" />
+        </mxCell>
+        <mxCell id="sec_3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#e3b341&#39;&gt;📊 Monitoring &amp; Alerting&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;All resources emit diagnostic logs to centralised Log Analytics Workspace. NSG flow logs and Azure Firewall logs enabled. Defender for Cloud Standard on subscription. Alerts for: failed auth, unusual egress, policy violations, quota thresholds.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="1160" x="40" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="sec_4" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#d2a8ff&#39;&gt;📋 Policy &amp; Compliance&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;Azure Policy enforces: no public endpoints (UC1), TLS 1.2+, CMK encryption, approved regions only, required tags (env, team, project, cost-centre). Deny effect on non-compliant resources. Policy compliance dashboard reviewed monthly.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="1160" x="40" y="682" as="geometry" />
+        </mxCell>
+        <mxCell id="s7h" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;spacingLeft=10;" value="7.  RBAC Model" vertex="1">
+          <mxGeometry height="32" width="1160" x="40" y="744" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_h0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Role" vertex="1">
+          <mxGeometry height="26" width="220" x="40" y="776" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_h1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Assigned To" vertex="1">
+          <mxGeometry height="26" width="220" x="260" y="776" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_h2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Scope" vertex="1">
+          <mxGeometry height="26" width="260" x="480" y="776" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_h3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Permissions" vertex="1">
+          <mxGeometry height="26" width="460" x="740" y="776" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_0_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Hub Owner" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="802" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_0_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Platform Team only" vertex="1">
+          <mxGeometry height="24" width="220" x="260" y="802" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_0_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="AI Foundry Hub" vertex="1">
+          <mxGeometry height="24" width="260" x="480" y="802" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_0_3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Create/delete projects, manage Hub settings, assign project-level roles" vertex="1">
+          <mxGeometry height="24" width="460" x="740" y="802" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_1_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Project Contributor" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="826" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_1_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Team AAD Group" vertex="1">
+          <mxGeometry height="24" width="220" x="260" y="826" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_1_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="AI Foundry Project (scoped)" vertex="1">
+          <mxGeometry height="24" width="260" x="480" y="826" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_1_3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Deploy models, manage project resources, view logs. Cannot access sibling projects." vertex="1">
+          <mxGeometry height="24" width="460" x="740" y="826" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_2_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Reader" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_2_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Stakeholders / Auditors" vertex="1">
+          <mxGeometry height="24" width="220" x="260" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_2_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="AI Foundry Project" vertex="1">
+          <mxGeometry height="24" width="260" x="480" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_2_3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Read-only view of project resources and outputs. No write access." vertex="1">
+          <mxGeometry height="24" width="460" x="740" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_3_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Managed Identity – Data Reader" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="874" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_3_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Project Managed Identity" vertex="1">
+          <mxGeometry height="24" width="220" x="260" y="874" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_3_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Shared Resources (UC3)" vertex="1">
+          <mxGeometry height="24" width="260" x="480" y="874" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_3_3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Read data from Cosmos DB, Data Lake, AI Search. No write, no delete." vertex="1">
+          <mxGeometry height="24" width="460" x="740" y="874" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_4_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Key Vault Secrets User" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="898" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_4_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Project Managed Identity" vertex="1">
+          <mxGeometry height="24" width="220" x="260" y="898" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_4_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Key Vault (scoped)" vertex="1">
+          <mxGeometry height="24" width="260" x="480" y="898" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_4_3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Read secrets. Cannot set, delete, or purge secrets. Scoped per project vault." vertex="1">
+          <mxGeometry height="24" width="460" x="740" y="898" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_5_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Network Contributor" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="922" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_5_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Platform Team only" vertex="1">
+          <mxGeometry height="24" width="220" x="260" y="922" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_5_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Hub VNet + Spoke VNets" vertex="1">
+          <mxGeometry height="24" width="260" x="480" y="922" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_5_3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Manage peering, NSGs, UDRs, private endpoints. Not granted to project teams." vertex="1">
+          <mxGeometry height="24" width="460" x="740" y="922" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_6_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Log Analytics Reader" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="946" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_6_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="All Project Teams" vertex="1">
+          <mxGeometry height="24" width="220" x="260" y="946" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_6_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Log Analytics Workspace" vertex="1">
+          <mxGeometry height="24" width="260" x="480" y="946" as="geometry" />
+        </mxCell>
+        <mxCell id="rbac_6_3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Query own project logs only (workspace scoped by resource tags)." vertex="1">
+          <mxGeometry height="24" width="460" x="740" y="946" as="geometry" />
+        </mxCell>
+        <mxCell id="s8h" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;spacingLeft=10;" value="8.  Naming Conventions" vertex="1">
+          <mxGeometry height="32" width="1160" x="40" y="984" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_h0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Resource Type" vertex="1">
+          <mxGeometry height="26" width="220" x="40" y="1016" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_h1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Naming Pattern" vertex="1">
+          <mxGeometry height="26" width="380" x="260" y="1016" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_h2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#58a6ff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Example" vertex="1">
+          <mxGeometry height="26" width="560" x="640" y="1016" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_0_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Resource Group" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="1042" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_0_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#e3b341;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="rg-aif-{env}-{team}-{region}" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="1042" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_0_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="rg-aif-prod-lirr-eus" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="1042" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_1_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="AI Foundry Hub" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="1066" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_1_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#e3b341;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="aih-{org}-{env}-{region}" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="1066" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_1_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="aih-nymta-prod-eus" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="1066" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_2_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="AI Foundry Project" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_2_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#e3b341;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="aip-{team}-{env}" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_2_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="aip-lirr-prod" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_3_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="VNet (Hub)" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="1114" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_3_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#e3b341;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="vnet-hub-{org}-{env}" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="1114" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_3_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="vnet-hub-nymta-prod" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="1114" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_4_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="VNet (Spoke)" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="1138" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_4_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#e3b341;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="vnet-spoke-{team}-{env}" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="1138" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_4_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="vnet-spoke-lirr-prod" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="1138" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_5_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Subnet (Agent)" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="1162" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_5_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#e3b341;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="snet-agent-{team}-{env}" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="1162" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_5_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="snet-agent-lirr-prod" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="1162" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_6_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Subnet (PE)" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="1186" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_6_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#e3b341;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="snet-pe-{team}-{env}" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="1186" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_6_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="snet-pe-lirr-prod" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="1186" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_7_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Private Endpoint" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_7_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#e3b341;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="pe-{svc}-{team}-{env}" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_7_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="pe-llm-lirr-prod / pe-srch-lirr-prod" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_8_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Key Vault" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="1234" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_8_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#e3b341;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="kv-{team}-{env}-{region}" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="1234" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_8_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="kv-lirr-prod-eus (max 24 chars)" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="1234" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_9_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Log Analytics WS" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="1258" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_9_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#e3b341;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="law-aif-{org}-{env}" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="1258" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_9_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="law-aif-nymta-prod" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="1258" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_10_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="NSG" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="1282" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_10_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#e3b341;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="nsg-{subnet}-{team}-{env}" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="1282" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_10_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="nsg-agent-lirr-prod" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="1282" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_11_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="Managed Identity" vertex="1">
+          <mxGeometry height="24" width="220" x="40" y="1306" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_11_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#e3b341;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="id-{team}-{env}" vertex="1">
+          <mxGeometry height="24" width="380" x="260" y="1306" as="geometry" />
+        </mxCell>
+        <mxCell id="nm_11_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=6;" value="id-lirr-prod" vertex="1">
+          <mxGeometry height="24" width="560" x="640" y="1306" as="geometry" />
+        </mxCell>
+        <mxCell id="s9h" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;spacingLeft=10;" value="9.  Onboarding Guide (Quick Start)" vertex="1">
+          <mxGeometry height="32" width="1160" x="40" y="1344" as="geometry" />
+        </mxCell>
+        <mxCell id="ob_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#58a6ff&#39;&gt;Step 1: Submit Onboarding Request&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;Open a service desk ticket. Provide: team name, project name, use case (UC1/UC2/UC3), data classification level, list of required resources, designated technical lead, and Azure AD group name.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="46" width="1160" x="40" y="1376" as="geometry" />
+        </mxCell>
+        <mxCell id="ob_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#58a6ff&#39;&gt;Step 2: Platform Team Review&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;Platform team validates use case selection, checks subnet CIDR availability, confirms resource requirements, and assigns VNet address space from the master IPAM table.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="46" width="1160" x="40" y="1422" as="geometry" />
+        </mxCell>
+        <mxCell id="ob_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#56d364&#39;&gt;Step 3: Provision via IaC&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;Platform team runs the appropriate Bicep/Terraform module:   • UC1: module/uc1-private-agent   • UC2: module/uc2-llm-search   • UC3: module/uc3-shared-resources All modules are pre-approved and policy-compliant.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="46" width="1160" x="40" y="1468" as="geometry" />
+        </mxCell>
+        <mxCell id="ob_3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#56d364&#39;&gt;Step 4: Configure RBAC&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;Assign team AAD group to Contributor role scoped to their AI Foundry Project. Create system-assigned Managed Identity for the project. For UC3: assign Reader role on shared resources.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="46" width="1160" x="40" y="1514" as="geometry" />
+        </mxCell>
+        <mxCell id="ob_4" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#e3b341&#39;&gt;Step 5: Connect Resources&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;Register connected resources in the AI Foundry Project. UC1: deploy private endpoints + DNS A-records in Hub zones. UC2: configure service endpoints + IP restrictions. UC3: register cross-sub private endpoints.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="46" width="1160" x="40" y="1560" as="geometry" />
+        </mxCell>
+        <mxCell id="ob_5" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#e3b341&#39;&gt;Step 6: Validate &amp; Test&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;Platform team runs connectivity validation script. Verifies: DNS resolution, private endpoint reachability, RBAC isolation (no cross-project access), NSG rules, Firewall logs clean.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="46" width="1160" x="40" y="1606" as="geometry" />
+        </mxCell>
+        <mxCell id="ob_6" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#3fb950&#39;&gt;Step 7: Handoff &amp; Go Live&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;Team receives: project URL, access credentials, runbook, and monitoring dashboard link. Project marked LIVE in the registry. Onboarding ticket closed.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="46" width="1160" x="40" y="1652" as="geometry" />
+        </mxCell>
+        <mxCell id="s10h" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;spacingLeft=10;" value="10.  IaC &amp; Deployment" vertex="1">
+          <mxGeometry height="32" width="1160" x="40" y="1712" as="geometry" />
+        </mxCell>
+        <mxCell id="s10b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;&lt;b&gt;&lt;font color=&#39;#f0883e&#39;&gt;Tooling:&lt;/font&gt;&lt;/b&gt; Bicep (primary) + Terraform modules (optional). All deployments via Azure DevOps pipeline or GitHub Actions. No manual portal deployments — enforced by Azure Policy (deny deployments outside approved pipeline service principal).&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;font color=&#39;#f0883e&#39;&gt;Repo structure:&lt;/font&gt;&lt;/b&gt;  /infra/hub/ (Hub VNet, Firewall, Bastion, DNS)  |  /infra/modules/uc1/  |  /infra/modules/uc2/  |  /infra/modules/uc3/  |  /infra/shared/ (Cosmos DB, Data Lake, Key Vault)  |  /scripts/validate-onboarding.sh&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;font color=&#39;#f0883e&#39;&gt;Pipeline flow:&lt;/font&gt;&lt;/b&gt;  lint → plan → security scan (Checkov/tfsec) → approval gate → apply → smoke test → notify team&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;font color=&#39;#f0883e&#39;&gt;State management:&lt;/font&gt;&lt;/b&gt; Terraform state in Azure Blob Storage (private endpoint, versioning enabled, RBAC restricted to pipeline SP only).&lt;/font&gt;" vertex="1">
+          <mxGeometry height="96" width="1160" x="40" y="1744" as="geometry" />
+        </mxCell>
+        <mxCell id="s11h" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;spacingLeft=10;" value="11.  Prerequisites" vertex="1">
+          <mxGeometry height="32" width="1160" x="40" y="1854" as="geometry" />
+        </mxCell>
+        <mxCell id="pre_0a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#79c0ff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;fontStyle=1;" value="Azure Subscription" vertex="1">
+          <mxGeometry height="28" width="220" x="40" y="1886" as="geometry" />
+        </mxCell>
+        <mxCell id="pre_0b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="Active subscription with Owner or Contributor rights. Quota pre-increased for OpenAI (GPT-4o), AI Search, Cosmos DB in target region (e.g. East US)." vertex="1">
+          <mxGeometry height="28" width="940" x="260" y="1886" as="geometry" />
+        </mxCell>
+        <mxCell id="pre_1a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#79c0ff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;fontStyle=1;" value="Azure AD / Entra ID" vertex="1">
+          <mxGeometry height="28" width="220" x="40" y="1914" as="geometry" />
+        </mxCell>
+        <mxCell id="pre_1b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="Global Admin or Privileged Role Administrator to assign RBAC roles. AAD groups created per team before onboarding." vertex="1">
+          <mxGeometry height="28" width="940" x="260" y="1914" as="geometry" />
+        </mxCell>
+        <mxCell id="pre_2a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#79c0ff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;fontStyle=1;" value="Networking" vertex="1">
+          <mxGeometry height="28" width="220" x="40" y="1942" as="geometry" />
+        </mxCell>
+        <mxCell id="pre_2b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="IP Address Management (IPAM) plan agreed. Hub VNet deployed (or deploy via /infra/hub/). ExpressRoute or VPN if on-prem connectivity is needed for UC1." vertex="1">
+          <mxGeometry height="28" width="940" x="260" y="1942" as="geometry" />
+        </mxCell>
+        <mxCell id="pre_3a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#79c0ff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;fontStyle=1;" value="Tooling" vertex="1">
+          <mxGeometry height="28" width="220" x="40" y="1970" as="geometry" />
+        </mxCell>
+        <mxCell id="pre_3b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="Azure CLI 2.55+, Bicep CLI 0.23+, Terraform 1.6+ (optional), Python 3.10+ (for validation scripts), Git access to this repo." vertex="1">
+          <mxGeometry height="28" width="940" x="260" y="1970" as="geometry" />
+        </mxCell>
+        <mxCell id="pre_4a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#79c0ff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;fontStyle=1;" value="AI Foundry Permissions" vertex="1">
+          <mxGeometry height="28" width="220" x="40" y="1998" as="geometry" />
+        </mxCell>
+        <mxCell id="pre_4b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="Subscription-level permission to create AI Foundry Hub resource. Microsoft.MachineLearningServices provider registered on subscription." vertex="1">
+          <mxGeometry height="28" width="940" x="260" y="1998" as="geometry" />
+        </mxCell>
+        <mxCell id="pre_5a" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#79c0ff;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;fontStyle=1;" value="Defender for Cloud" vertex="1">
+          <mxGeometry height="28" width="220" x="40" y="2026" as="geometry" />
+        </mxCell>
+        <mxCell id="pre_5b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#161b22;fontColor=#c9d1d9;align=left;verticalAlign=middle;fontSize=10;spacingLeft=8;" value="Defender for Cloud Standard plan enabled on subscription BEFORE first project onboards (required for UC1 compliance)." vertex="1">
+          <mxGeometry height="28" width="940" x="260" y="2026" as="geometry" />
+        </mxCell>
+        <mxCell id="s12h" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;spacingLeft=10;" value="12.  Frequently Asked Questions" vertex="1">
+          <mxGeometry height="32" width="1160" x="40" y="2068" as="geometry" />
+        </mxCell>
+        <mxCell id="faq_0" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#e3b341&#39;&gt;Q: Do the 3 use cases require separate subscriptions?&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;A: No. All three use cases run within a single subscription. Isolation is achieved through RBAC (scoped per project) and dedicated VNet spokes. Separate subscriptions are only needed if there is a hard compliance boundary (e.g. FedRAMP vs standard) or a billing chargeback requirement that cannot be satisfied with cost tags.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="1160" x="40" y="2100" as="geometry" />
+        </mxCell>
+        <mxCell id="faq_1" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#e3b341&#39;&gt;Q: Can UC1 and UC2 teams share an AI Search index?&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;A: No by default. Each project has its own connected AI Search resource. UC3 is the pattern for intentional resource sharing — it provides controlled read-only access via Managed Identity with explicit RBAC grants.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="1160" x="40" y="2152" as="geometry" />
+        </mxCell>
+        <mxCell id="faq_2" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#e3b341&#39;&gt;Q: What happens if a team needs both private endpoints AND shared resources?&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;A: A project can be a hybrid of UC1 and UC3. The private endpoint pattern from UC1 is applied for connectivity, and the shared resource access model from UC3 is applied for the external Cosmos DB / Data Lake. Document this as a custom variant in the onboarding ticket.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="1160" x="40" y="2204" as="geometry" />
+        </mxCell>
+        <mxCell id="faq_3" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#e3b341&#39;&gt;Q: Can teams deploy their own resources outside the AI Foundry Project?&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;A: Only within their scoped Resource Group. Azure Policy prevents deploying public-facing resources or resources in non-approved regions. All networking changes must go through the Platform Team.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="1160" x="40" y="2256" as="geometry" />
+        </mxCell>
+        <mxCell id="faq_4" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#e3b341&#39;&gt;Q: How are LLM model deployments managed?&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;A: Model deployments (e.g. GPT-4o, Ada-002) are managed at the Hub level by the Platform Team. Teams request new deployments via ticket. Quota is allocated per project using Azure OpenAI deployment quotas.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="1160" x="40" y="2308" as="geometry" />
+        </mxCell>
+        <mxCell id="faq_5" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;b&gt;&lt;font color=&#39;#e3b341&#39;&gt;Q: Is the Hub a single point of failure?&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;A: The AI Foundry Hub is a control plane resource. It does not process inference traffic — that goes directly to Azure OpenAI. Hub unavailability affects project management (portal/API), not live AI inference calls already in flight.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="52" width="1160" x="40" y="2360" as="geometry" />
+        </mxCell>
+        <mxCell id="s13h" parent="1" style="text;html=1;strokeColor=none;fillColor=#161b22;fontColor=#58a6ff;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;spacingLeft=10;" value="13.  Contributing &amp; Contact" vertex="1">
+          <mxGeometry height="32" width="1160" x="40" y="2422" as="geometry" />
+        </mxCell>
+        <mxCell id="s13b" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=6;spacingRight=8;" value="&lt;font color=&#39;#c9d1d9&#39; style=&#39;font-size:10px;&#39;&gt;&lt;b&gt;&lt;font color=&#39;#58a6ff&#39;&gt;Document Owner:&lt;/font&gt;&lt;/b&gt;  AI Platform Team — responsible for all architecture decisions, IaC modules, and onboarding approvals.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;font color=&#39;#58a6ff&#39;&gt;To request changes to this architecture:&lt;/font&gt;&lt;/b&gt;  Raise a PR against this draw.io file in the platform repo, or open an Architecture Review Board (ARB) ticket for major changes (new use case, subscription changes, security control changes).&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;font color=&#39;#58a6ff&#39;&gt;To onboard a new project:&lt;/font&gt;&lt;/b&gt;  Follow Section 9 — submit a service desk ticket with the required fields. SLA: 5 business days from approved ticket to live project.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;font color=&#39;#58a6ff&#39;&gt;Security incidents:&lt;/font&gt;&lt;/b&gt;  Report immediately to the Security Operations Centre (SOC). Do not raise a standard service desk ticket for suspected breaches.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="88" width="1160" x="40" y="2454" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="text;html=1;strokeColor=#30363d;fillColor=#0d1117;align=center;verticalAlign=middle;fontSize=10;" value="&lt;font color=&#39;#8b949e&#39;&gt;AI Foundry Platform  |  README v1.0  |  March 2026  |  CONFIDENTIAL – Internal Use Only  |  Owner: AI Platform Team&lt;/font&gt;" vertex="1">
+          <mxGeometry height="28" width="1160" x="40" y="2554" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
